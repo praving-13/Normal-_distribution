@@ -1,0 +1,3 @@
+##scipy for probability distribution
+from scipy import stats 
+stats.norm.cdf(x,loc=mean,scale=std)
