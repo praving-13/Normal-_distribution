@@ -1,0 +1,27 @@
+data-related to custoer,products>insight generation-deep dive in data>features-find influencing parameters,shortlist parameters-it need domain knowledge
+>build model-like regression,svm,dt>prediction>decision>feedback
+
+>every 3/4 months we have to refresh the ML data.so that there is continuos process of updation.
+>tableau-data visualization tool-drag nd drop tool-
+>eda-exploring data analysis
+
+
+data types
+continuous data-quantities in terms of decimal value which also make sense.like temp,money,time
+discrete data-quantities in terms of decimal value which not make sense-like laptop sales,
+
+flavors od data
+nominal-lable 
+ordinal-ordered data i.e. sequence.,
+interval scale dATA-temp,magnitude between interval is same
+ratio scale-currency,height,weight,
+
+
+summary statistics/discriptive stat.
+mean-avg value
+median-middle value,or avg of middle 2 values-
+mode-max. occurences,highest frequency
+vaiance-fluctuations in number
+variance=s^2=(sum(xi-mean)^2)/x-1
+standard deviation= s= squareroot of variance
+range=max.- min.
