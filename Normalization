@@ -1,0 +1,55 @@
+2.1 Using normalize() from sklearn
+2.2 Complete code
+2.3 Normalize columns in a dataset using normalize()
+2.4 How to Normalize a Dataset Without Converting Columns to Array?
+2.5 Using MinMaxScaler() to Normalize Data in Python
+3 Conclusion
+Why Do We Need To Normalize Data in Python?
+Machine learning algorithms tend to perform better or converge faster when the different features (variables) are on a smaller scale. Therefore it is common practice to normalize the data before training machine learning models on it.
+
+
+Normalization also makes the training process less sensitive to the scale of the features. This results in getting better coefficients after training.
+
+This process of making features more suitable for training by rescaling is called feature scaling.
+
+The formula for Normalization is given below :
+
+Normalization
+Normalization
+We subtract the minimum value from each entry and then divide the result by the range. Where range is the difference between the maximum value and the minimum value.
+
+
+Steps to Normalize Data in Python
+We are going to discuss two different ways to normalize data in python.
+
+The first one is by using the method ‘normalize()‘ under sklearn.
+
+Using normalize() from sklearn
+Let’s start by importing processing from sklearn.
+
+from sklearn import preprocessing
+Now, let’s create an array using Numpy.
+
+import numpy as np
+x_array = np.array([2,3,5,6,7,4,8,7,6])
+Now we can use the normalize() method on the array. This method normalizes data along a row. Let’s see the method in action.
+
+normalized_arr = preprocessing.normalize([x_array])
+print(normalized_arr)
+Complete code
+Here’s the complete code from this section :
+
+from sklearn import preprocessing
+import numpy as np
+x_array = np.array([2,3,5,6,7,4,8,7,6])
+normalized_arr = preprocessing.normalize([x_array])
+print(normalized_arr)
+Output :
+
+[0.11785113, 0.1767767 , 0.29462783, 0.35355339, 0.41247896,
+        0.23570226, 0.47140452, 0.41247896, 0.35355339]
+We can see that all the values are now between the range 0 to 1. This is how the normalize() method under sklearn works.
+
+You can also normalize columns in a dataset using this method. Let’s see how to do that next.
+
+Normalize
